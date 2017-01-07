@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
  * @author vit@tym.im
  */
 public class BaseParser implements Parser{
-    private static final Pattern NUMBER_REGEXP = Pattern.compile("[+-]?[0-9]*(?:[.][0-9]*)?(?:[eE][+-][0-9]+)?");
+    private static final Pattern NUMBER_REGEXP = Pattern.compile("[+-]?[0-9]*(?:[.][0-9]*)?(?:[eE][+-]?[0-9]+)?");
     public static final BaseParser INSTANCE = new BaseParser();
 
     @Override
