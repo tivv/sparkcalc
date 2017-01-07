@@ -22,6 +22,11 @@ public class CalculatorTest {
     }
 
     @Test
+    public void testMultiplyPlusOnePlusDivide() throws Exception {
+        Assert.assertEquals(1/2.0+1-4*4.0, calculator.apply(" -4*4 + 1 + 1/2"));
+    }
+    
+    @Test
     public void testJustNumber() throws Exception {
         Assert.assertEquals(4.0, calculator.apply("+4e0"));
     }
